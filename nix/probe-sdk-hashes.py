@@ -24,7 +24,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FAKE = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+FAKE = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
 SYSTEM = "x86_64-linux"
 PIN = ROOT / "nix" / "flutter-sdk.json"
 TOOLS_LOCK = ROOT / "nix" / "flutter-tools-lock.json"
