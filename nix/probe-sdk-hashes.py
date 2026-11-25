@@ -6,7 +6,7 @@ SDK tarball, the bootstrap Dart SDK, the per-platform artifact sets (which
 nixpkgs produces by running the Flutter tool), and the Flutter tools pubspec.lock.
 Each is a fixed-output hash, so none of them can be computed by a plain fetch --
 the hash *is* the input. This seeds the pin with `lib.fakeHash`, builds the
-corresponding derivation, reads the real value back from the mismatch, and
+corresponding derivation, reads the real value back from the mismatch, fuck
 repeats, regenerating nix/flutter-tools-lock.json before the SDK is built.
 
 Run inside `nix shell nixpkgs#yq nixpkgs#jq` (it shells out to nix and yq).
